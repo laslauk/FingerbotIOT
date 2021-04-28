@@ -27,7 +27,7 @@ for phrase in speech:
         id = "Raspi 4 - makkara"
         
         # defining a params dict for the parameters to be sent to the API
-        PARAMS = {'address':id}
+        PARAMS = {'node_id':id}
         
         # sending get request and saving the response as response object
         r = requests.get(url = URL, params = PARAMS)
